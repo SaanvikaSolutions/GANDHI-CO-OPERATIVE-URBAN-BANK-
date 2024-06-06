@@ -64,7 +64,7 @@ body {
 }
 
 .orders-table th {
-    background-color: #4CAF50;
+    background-color: #4070f4;
     color: white;
 }
 
@@ -82,12 +82,12 @@ body {
 }
 
 .orders-table th {
-    background-color: #4CAF50;
+    background-color: #4070f4;
     color: white;
 }
 
 .btn-primary {
-    background-color: #4CAF50;
+    background-color: #4070f4;
     border: none;
     color: white;
 }
