@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.banner1 h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.banner1 p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.imp-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.imp-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.imp-container table th,
+.imp-container table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #7f252e;
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    padding-top: 50px;
+}
+
+.imp-container table tbody tr td a {
+    text-decoration: none;
+    color: #7f252e;
+}
+
+@media (max-width: 768px) {
+    .imp-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .imp-container table th,
+    .imp-container table td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imp-container table {
+        font-size: 14px;
+    }
+
+    .imp-container table th,
+    .imp-container table td {
+        padding: 4px;
+    }
+}

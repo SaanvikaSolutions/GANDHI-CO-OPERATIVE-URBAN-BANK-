@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family:'Poppins';
+    margin: 0;
+    padding: 0;
+    
+}
+.BIMG {
+    background-image: linear-gradient(to bottom, rgb(84, 163, 167), rgba(237, 229, 229, 0.5)), url('Intrestrates.png');
+    /* background-size: 250px 250px; */
+    background-position: center;
+    color: #000000; 
+    text-align: center;
+    padding: 100px 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Poppins';
+  
+}
+.BIMG h1 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: xx-large;
+    font-family:'Poppins';
+}
+
+.BIMG p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: -5px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(74, 73, 73, 0.5);
+    font-family:'Poppins';
+}
+.head h2{
+  font-size: xx-large;
+  margin-left: 21px;
+  margin-top: 28px;
+  font-family:'Poppins';
+}
+.head p{
+  margin-left: 21px;
+  margin-top: 28px;
+  font-family:'Poppins';
+}
+
+.head h3{
+  margin-left: 21px;
+  margin-top: 28px;
+  font-family:'Poppins';
+  color: rgb(241, 0, 0);
+}
+
+  /* table css start  */
+  .HOBTable{
+    border-collapse: collapse;
+    margin: 30px;
+    margin-left: 200px;
+}
+.HOBTable th, .HOBTable td{
+    border: 1px solid rgb(4, 3, 3);
+    text-align: left;
+    padding: 10px;
+    /* justify-content: center; */
+}
+.HOBTable tr:nth-child(even){
+  background-color: #DCE5E9;
+}
+.HOBTable tr{
+    transition: all 0.4s ease;
+}
+.HOBTable tr:hover{
+  background-color:  #778a8d ;
+  color: rgb(0, 0, 0);
+}
+.HOBTable thead tr:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+/* table css end */
+
+
+.lastpara p{
+  font-size: large;
+  padding-left: 23px;
+  font-family: 'poppins';
+  margin-bottom: 15px;
+}
+
+/* @media  screen and (max-width: 808px) {
+  .BIMG {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+  }
+} */
+  
+@media screen and (max-width: 808px) {
+  .BIMG {
+      padding: 50px 20px;
+      background-size: cover; /* Ensures the image covers the area */
+  }
+
+  .BIMG h1 {
+      font-size: large;
+  }
+
+  .BIMG p {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+  }
+
+  .head h2 {
+      font-size: large;
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+
+  .head p, .head h3 {
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+
+  .HOBTable {
+      margin: 30px 10px;
+      margin-left: 10px;
+      overflow-x: auto; /* Ensures the table is scrollable if it overflows */
+  }
+ 
+}
+
+
+
+/* Media Query for very small screens (less than 423px) */
+@media screen and (max-width: 423px) {
+  .BIMG {
+      padding: 20px 10px;
+  }
+
+  .BIMG h1 {
+      font-size: medium;
+  }
+
+  .BIMG p {
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+  }
+
+  .head h2 {
+      font-size: medium;
+      margin-left: 5px;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .head p, .head h3 {
+      /* margin-left: 5px;
+      margin-top: 10px; */
+      text-align: justify;
+      padding: 30px;
+      margin-left: 0px;
+      margin-top: -20px;
+      font-size: 12px;
+
+  }
+
+  .HOBTable {
+      margin: 20px 5px;
+      margin-left: 5px;
+      overflow-x: auto; /* Ensures the table is scrollable if it overflows */
+  }
+
+  .HOBTable th, .HOBTable td {
+      padding: 3px;
+      font-size: 0.8rem;
+  }
+}
+
+
+@media screen and (max-width: 808px) {
+ 
+.lastpara p{
+  font-size: 12px;
+  
+} 
+}

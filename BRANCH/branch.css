@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.banner {
+    background-image: linear-gradient(to bottom, rgba(66, 156, 151, 0.5), rgba(219, 211, 211, 0.5)), url(branchimg.PNG);
+    background-size: cover;
+    background-position: center;
+    color: #090808;
+    text-align: center;
+    padding: 150px 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.banner h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.banner p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.loan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.loan-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:   #DFE7FA  ;
+    transition: transform 0.3s;
+}
+
+.loan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(129, 133, 133, 0.3);
+}
+
+.loan-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.loan-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 750;
+    color: #171616;
+}
+
+.loan-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.btn-apply-now {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-apply-now:hover {
+    background-color: #388e3c;
+}
+.addressbody{
+    display: flex;
+    align-items: baseline;
+}
+.addressbody .symbol-loan-card i{
+    font-size: 0.9rem;
+    padding: 0px 10px;
+    padding-left: 0px;
+    color: #2e6007;
+}
+.addressbody .add-loan-card p{
+    font-size: 0.9rem;
+    line-height: 25px;
+    position: relative;
+    
+}
+.loans p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: poppins;
+    text-align: justify;
+    padding: 20px;
+}
+.loans{
+    padding: 10px 5%;
+    background-color: #e9ecf7;
+}
+.loans h1{
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    text-align: center;
+}

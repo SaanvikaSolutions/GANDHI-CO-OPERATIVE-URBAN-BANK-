@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Ombudsman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="headerimages/bancklogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="important_docs/imp_docs.css">
+    <style>
+        .banner1 {
+            background-image: linear-gradient(to bottom, rgba(66, 156, 151, 0.5), rgba(219, 211, 211, 0.5)), url(important_docs/bcsbi.webp);
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            text-align: center;
+            padding: 150px 20px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="top-nav">
+        <specia-header></specia-header>
+    </header>
+    <div class="banner1">
+        <h1>
+            BCSBI Members</h1>
+        <p>We are a member of BCSBI - a voluntary code ensuring safe banking practices while dealing with our valuable customers.</p>
+    </div>
+    <h2 class="heading">The Bank is a member of BCSBI</h2>
+    <div class="imp-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="font-size: 19px;"> BCSBI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Code of Banks Commitment to Micro and Small Enterprises</td>
+                    <td><a href="#" onclick="openPDF('files/MSECodep.pdf')"><strong>Read me</strong></a></td>
+                </tr>
+                <tr>
+                    <td>Code of Bank’s Commitment to Customers
+                        </td>
+                    <td><a href="#" onclick="openPDF('files/Customers-January-2018.pdf')"><strong>Read me</strong></a></td>
+                </tr>
+                <tr>
+                    <td>Single window for resolution of complaints against RBI regulated entities</td>
+                    <td><a href="#" onclick="openPDF('files/RBI-IOS-Full-Pg-English.pdf')"><strong>Read me</strong></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <special-footer></special-footer>
+    <script src="./HeaderFooter.js"></script>
+    <script src="hrader.js"></script>
+    <script>
+        function openPDF(fileName) {
+            window.open(fileName, '_blank');
+        }
+    </script>
+</body>
+</html>

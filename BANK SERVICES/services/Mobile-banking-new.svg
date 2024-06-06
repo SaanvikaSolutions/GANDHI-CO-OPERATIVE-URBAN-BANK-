@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Book deposits with IDFC FIRST Bank instantly using our app and enjoy high returns 1</title>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Grey-Red" transform="translate(-122.000000, -3591.000000)">
+            <g id="Book-deposits-with-IDFC-FIRST-Bank-instantly-using-our-app-and-enjoy-high-returns-1" transform="translate(122.000000, 3591.000000)">
+                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                <g id="icn" transform="translate(5.000000, 1.000000)" stroke-width="2">
+                    <path d="M2,0 L12,0 C13.1045695,0 14,0.8954305 14,2 L14,20 C14,21.1045695 13.1045695,22 12,22 L2,22 C0.8954305,22 0,21.1045695 0,20 L0,2 C0,0.8954305 0.8954305,0 2,0 Z" id="Rectangle" stroke="#787878"></path>
+                    <line x1="6" y1="19.5" x2="8" y2="19.5" id="Line-5" stroke="#9C1D26"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

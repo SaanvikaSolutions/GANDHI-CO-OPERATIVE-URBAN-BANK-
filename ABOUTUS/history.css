@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: POPPINS;
+}  
+
+#HOB {
+    width: 100%;
+    position: relative;
+    background-color: #cbd5d5;
+}
+
+#HOB .HOBL {
+    width: 80%;
+    margin-left: auto;
+    background-color: rgb(105, 151, 177);
+}
+
+#HOB .HOBL .HOBL-heading h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+#HOB .HOBL .HOBL-para {
+    width: 60%;
+    margin: 0px auto;
+}
+
+#HOB .HOBL .HOBL-para p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#HOB .HOBL .HOBL-img {
+    width: 100%;
+}
+
+#HOB .HOBL .HOBL-img img {
+    width: 100%;
+}
+
+.HOBR {
+    width: 25%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: rgb(215, 215, 215);
+
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    box-shadow: 10px 10px 10px 10px rgb(188, 187, 187);
+
+
+    overflow-y: scroll;
+}
+
+.HOBR .HOBR-logo {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.HOBR .HOBR-logo img {
+    width: 100%;
+}
+
+.HOBR .HOBR-y h1 {
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+
+.HOBR .HOBR-y::after {
+    content: '';
+    display: inline-block;
+
+    width: 70%;
+    height: 2px;
+    color: gold;
+    background-color: rgb(21, 164, 203);
+
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.HOBR-history {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: rgb(21, 185, 255);
+}
+
+.HOBR-history .HOBR-year {
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(7, 7, 7);
+}
+
+.HOBR-history .HOBR-content {
+    padding: 5px;
+}
+
+.HOBR-history .HOBR-content h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.HOBR-history .HOBR-content p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+#history {
+    background-color: #ffffff;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#history .his-heading h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0px 40px;
+    padding: 10px;
+    margin-bottom: -20px;
+}
+
+#history .his-heading::after {
+    content: '';
+    display: inline-block;
+
+    width: 240px;
+    height: 2px;
+    color: gold;
+    background-color: #18a2c8;
+
+    margin-left: 47px;
+    margin-top: -20px;
+}
+
+#history .his-cont {
+    padding: 0px 30px;
+    position: relative;
+}
+.his-cont ol {
+    margin-left: 90px;
+    margin-bottom: 20px;
+    margin-top: -35px;
+}
+/* #history .his-cont h2::after {
+    padding: 0px 20px;
+    content: '';
+    display: inline-table;
+    width: 300px;
+    height: 2px;
+    background-color: #f3fcff;
+    position: absolute;
+    left: 30px;
+    top: 30px;  
+} */
+#history {
+    position: relative;
+    margin-top: 50px; 
+}
+
+#history h2 {
+    position: relative;
+    color: #000000; 
+    font-size: 1.6rem; 
+    font-weight: 600; 
+    padding-bottom: 56px; 
+    padding-left: 44px; 
+    padding-right: 20px; 
+    padding-top: 20px;
+}
+
+
+
+#history h2::before {
+    content: '';
+    position: absolute;
+    bottom: 47px; 
+    left: 44px;
+    width: 36%; 
+    height: 2px; 
+    background-color: #0192ba;
+  
+}
+
+
+
+
+/* table css start  */
+.HOBTable {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0px auto;
+
+}
+
+.HOBTable th,
+.HOBTable td {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: left;
+    padding: 10px;
+}
+
+.HOBTable tr:nth-child(even) {
+    background-color: #DCE5E9;
+}
+
+.HOBTable tr {
+    transition: all 0.4s ease;
+}
+
+.HOBTable tr:hover {
+    background-color: #1d7da7;
+    color: white;
+}
+
+.HOBTable thead tr:hover {
+    background-color: white;
+    color: black;
+} 
+
+/* table css end */
+
+.HOBR-history .HOBR-content p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.allparagraph{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.paragraph {
+    padding: 10px;
+    line-height: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+    width: 95%;
+    margin: 0px auto;
+
+}

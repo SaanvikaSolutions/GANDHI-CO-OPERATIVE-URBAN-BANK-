@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposit Banner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="icon" href="headerimages/bancklogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="BANK SERVICES/fixed-deposite.css">
+    <style>
+        .banner {
+            width: 100%;
+            height: 600px;
+            background-image: url('./BANK SERVICES/images/current-account.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top-nav">
+        <specia-header></specia-header>
+    </header>
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Current Account</h1>
+            <p>Empowering Your Business with Seamless Banking Solutions</p>
+        </div>
+    </div>
+    <div class="fd-container">
+        <div class="fd-content">
+            <h2>Current Account</h2>
+            <p>A Current Account is a transactional bank account primarily for businesses, allowing unlimited
+                transactions, cheque payments, and overdraft facilities. It does not typically earn interest but offers
+                convenience through various channels. Minimum balance requirements and service charges may apply, with
+                additional corporate banking services available. </p>
+        </div>
+
+        <div class="fd_features">
+            <div class="fd-features-card">
+                <img src="BANK SERVICES/images/rate_of_interest.svg" alt="">
+                <h4>High Interest rates</h4>
+            </div>
+            <div class="fd-features-card">
+                <img src="BANK SERVICES/images/instant_online_approval.png" alt="">
+                <h4>Hassle Free Instant online booking</h4>
+            </div>
+            <div class="fd-features-card">
+                <img src="BANK SERVICES/images/flexible_tenure.svg" alt="">
+                <h4>Flexible Tenure</h4>
+            </div>
+            <div class="fd-features-card">
+                <img src="BANK SERVICES/images/flexible__repayment_tenure.svg" alt="">
+                <h4>Flexible options for interest payment</h4>
+            </div>
+        </div>
+
+        <div class="fd-benifits">
+            <h3>Features and Benefits of Current Account</h3>
+            <p>When you open Ghandi Cooperative Bank NRI FD, rest assured that you will get the following benefits:</p>
+            <ol>
+                <li> <strong>Transactional Flexibility</strong> Allows unlimited transactions for businesses.</li>
+                <li><strong>Overdraft Facility:</strong> Offers flexibility with overdrafts for short-term financing.
+                </li>
+                <li><strong>Convenient Payment Methods:</strong>Supports cheque payments and electronic transfers.</li>
+                <li><strong>Enhanced Financial Management</strong> Facilitates efficient cash flow management for
+                    businesses.</li>
+                <li><strong>Multiple Access Channels: </strong>Offers access via online banking, mobile apps, ATMs, and
+                    branches.</li>
+                <li><strong>Facilitates Business Growth:</strong>Supports expansion and facilitates smoother operations.
+                </li>
+            </ol>
+        </div>
+
+        <!-- --------------------------------------------------------------types---------------------------------------------------- -->
+
+
+        <div class="feature-heading">
+            <h2>Current Account Features </h2>
+        </div>
+        <div class="fd-features-set">
+
+            <div class="feature-card">
+                <div class="card-body">
+                    <div class="circle-img">
+                        <img src="BANK SERVICES/services/Balance-transfer-from-all-banks.svg" alt="">
+                    </div>
+                    <h5>Unlimited Transactions</h5>
+                    <p>Current Accounts allow unlimited deposits, withdrawals, and transfers, facilitating seamless
+                        business transactions without transactional restrictions.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-body">
+                    <div class="circle-img">
+                        <img src="BANK SERVICES/services/credit-limit.svg" alt="">
+                    </div>
+                    <h5>Chequebook Facility</h5>
+                    <p>Offers a chequebook for convenient payment transactions, allowing businesses to make payments
+                        easily.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-body">
+                    <div class="circle-img">
+                        <img src="BANK SERVICES/services/Funding-solutions.svg" alt="">
+                    </div>
+                    <h5>Minimum Balance Requirement:</h5>
+                    <p>Some accounts mandate a minimum balance, ensuring account stability and eligibility for certain
+                        benefits.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-body">
+                    <div class="circle-img">
+                        <img src="BANK SERVICES/services/Legal-report-waiver.svg" alt="">
+                    </div>
+                    <h5>Service Charges</h5>
+                    <p>May impose fees for specific transactions or account maintenance, varying based on the bank's
+                        policies.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-body">
+                    <div class="circle-img">
+                        <img src="BANK SERVICES/services/Mobile-banking-new.svg" alt="">
+                    </div>
+                    <h5>Nominal Interest or None</h5>
+                    <p>Current Accounts typically don't earn interest or offer minimal interest on balances, focusing on
+                        transactional convenience rather than savings.&nbsp;</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-body">
+                    <div class="circle-img">
+                        <img src="BANK SERVICES/services/Balance-transfer-from-all-banks.svg" alt="">
+                    </div>
+                    <h5>Online Banking</h5>
+                    <p> Allows convenient access to account information and transactions online, facilitating efficient
+                        banking operations remotely.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <special-footer></special-footer>
+    <script src="./HeaderFooter.js"></script>
+    <script src="hrader.js"></script>
+    
+    <script>
+        const typeButtons = document.querySelectorAll('.item');
+        const typeInfoElements = document.querySelectorAll('.info');
+
+        typeButtons.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                // Reset all buttons to their initial state
+                typeButtons.forEach(button => {
+                    button.classList.remove('zoomed', 'active');
+                });
+                // Zoom out the clicked button
+                btn.classList.add('zoomed', 'active');
+                // Hide all info elements
+                typeInfoElements.forEach(info => info.classList.remove('active'));
+                typeInfoElements[index].classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
