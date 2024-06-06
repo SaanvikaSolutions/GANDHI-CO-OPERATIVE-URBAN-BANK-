@@ -276,7 +276,9 @@ body {
     flex-direction: column;
     margin: 5%;
 }
-
+.form_container.dark h1{
+    color: white;
+}
 .form_container h1{
     padding-bottom: 13px;
 }

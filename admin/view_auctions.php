@@ -3,7 +3,7 @@ include("includes/sidebar.php");
 include('./connections/dbconnect.php');
 ?>
 
-<div class="form_container mt-5">
+<div class="form_container mt-5" id="update-container-id">
         <h1>Auctions Page</h1>
         <form action="view_auctions.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">

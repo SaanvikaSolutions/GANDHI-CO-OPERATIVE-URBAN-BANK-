@@ -2,7 +2,7 @@
 include("includes/sidebar.php");
 include('./connections/dbconnect.php');
 ?>
-<div class="form_container mt-5">
+<div class="form_container mt-5" >
         <h1>Loans Home Page</h1>
         <form action="view_loanhome.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
