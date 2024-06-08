@@ -59,11 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // If there are no validation errors, proceed to store user information
     if (empty($errors['username']) && empty($errors['password']) && empty($errors['confirm_password'])) {
         // Hash the password
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Prepare and bind the SQL statement
         $stmt = $con->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
-        $stmt->bind_param("ss", $username, $hashed_password);
+        $stmt->bind_param("ss", $username, $password);
 
         // Execute the statement
         if ($stmt->execute()) {

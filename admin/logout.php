@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['username'])) {
     // If not logged in, redirect to index.php or any other appropriate page
     header("Location: login.php");
-    exit;
+    exit();
 }
 
 // Unset all of the session variables
@@ -16,5 +16,5 @@ session_destroy();
 
 // Redirect to the index page with a logout message
 echo "<script>alert('successfully logged out.'); window.location.href='login.php';</script>";
-exit;
+exit();
 ?>

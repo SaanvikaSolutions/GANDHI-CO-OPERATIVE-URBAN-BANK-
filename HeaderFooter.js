@@ -11,7 +11,7 @@ this.innerHTML = `
   <div class="header-first-div">
     <!-- here we have  write the heading -->
     <div >
-     <a href="home.html"  class="header-img-logo"> <img src="./headerimages/gandhilogo.png" alt="gandhi pic" /> </a>
+     <a href="home.php"  class="header-img-logo"> <img src="./headerimages/gandhilogo.png" alt="gandhi pic" /> </a>
     </div>
 
     <div class="header-heading">
@@ -26,7 +26,7 @@ this.innerHTML = `
   </div>
   <div class="header-second-div">
     <ul>
-      <li><a href="./home.html">Home</a></li>
+      <li><a href="./home.php">Home</a></li>
       <li><a href="./AboutUs.html">About Us</a>
         <div class="services-drop-down">
           <a href="MissionAndObjectives.html">Mission & Objectives</a>
@@ -61,10 +61,10 @@ this.innerHTML = `
 
       <li><a href="./Branch.html">branches</a></li>
       <li><a href="./Interest Rates.html">Interest rate</a></li>
-      <li><a href="./Downloads.html">downloads</a></li>
-      <li><a href="./Auctions.html">auctions</a></li>
-      <li><a href="./career.html">Career</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./Downloads.php">downloads</a></li>
+      <li><a href="./Auctions.php">auctions</a></li>
+      <li><a href="./career.php">Career</a></li>
+      <li><a href="./contact.php">Contact</a></li>
     </ul>
   </div>
   <div class="sidenav-trigger-btn">
@@ -123,9 +123,9 @@ this.innerHTML = `
         <h4>Info</h4>
         <ul class="links">
           <li><a href="./AboutUs.html">About Us</a></li>
-          <li><a href="./contact.html">Locate Us</a></li>
+          <li><a href="./contact.php">Locate Us</a></li>
           <li><a href="./Branch.html">Branches</a></li>
-          <li><a href="./Auctions.html">Auctions</a></li>
+          <li><a href="./Auctions.php">Auctions</a></li>
           <li><a href="./Interest Rates.html">Intrest Rate</a></li>
         </ul>
       </div>

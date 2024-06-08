@@ -1,3 +1,55 @@
+<?php
+session_start();
+
+include('./connections/dbconnect.php');
+
+$uname = $pass  = '';
+
+$errors = array('unameError' => '','passError' => '','combineError' => '');
+
+if($_SERVER["REQUEST_METHOD"] === "POST"){
+
+    function validate($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if(empty($_POST['username'])){
+        $errors['unameError'] = "Username is Empty";
+    }
+    if(empty($_POST['passwd'])){
+        $errors['passError'] = "Password is Empty";
+    }
+
+    $uname = validate($_POST['username']);
+    $pass = validate($_POST['passwd']);
+
+    // Select the username, password, and id
+    $SelUserQ = "SELECT * FROM users WHERE username = '$uname'";
+    $SelUserRes = mysqli_query($con,$SelUserQ);
+
+    $numberofrows = mysqli_num_rows($SelUserRes);
+    if($numberofrows == 1){
+        $row = mysqli_fetch_assoc($SelUserRes);
+
+        // Verify password using password_verify()
+        if($pass == $row['password']){
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['id'] = $row['id'];
+
+            header("Location: ./index.php");
+            exit();
+        }else{
+            $errors['combineError'] = "Incorrect Username Or Password";
+        }
+    }else{
+        $errors['combineError'] = "Incorrect Username Or Password";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,12 +104,12 @@
             clip-path: inset(0 0 0 0);
         }
 
-        .screen__background__shape {
+        .screen_background_shape {
             transform: rotate(45deg);
             position: absolute;
         }
 
-        .screen__background__shape1 {
+        .screen_background_shape1 {
             height: 520px;
             width: 520px;
             background: #FFF;
@@ -66,7 +118,7 @@
             border-radius: 0 72px 0 0;
         }
 
-        .screen__background__shape2 {
+        .screen_background_shape2 {
             height: 220px;
             width: 220px;
             background: #6C63AC;
@@ -75,7 +127,7 @@
             border-radius: 32px;
         }
 
-        .screen__background__shape3 {
+        .screen_background_shape3 {
             height: 540px;
             width: 190px;
             background: linear-gradient(270deg, #5D54A4, #6A679E);
@@ -84,7 +136,7 @@
             border-radius: 32px;
         }
 
-        .screen__background__shape4 {
+        .screen_background_shape4 {
             height: 400px;
             width: 200px;
             background: #7E7BB9;
@@ -192,45 +244,29 @@
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-            <?php if(isset($_GET['error'])) { ?>
-                                <div class="alert alert-danger" role="alert">
-                                    <?php echo $_GET['error']; ?>
-                                </div>
-                                <?php } ?>
-                <form class="login" action="login_logic.php" method="POST">
+                <form class="login" action="" method="POST">
                     <h4>Gandhi Co-operative Bank</h4>
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input" placeholder="User name / Email">
+                        <input type="text" class="login__input" name="username" placeholder="Username / Email">
+                        <small class="text-warning"><?php echo $errors['unameError']; ?></small>
                     </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input" placeholder="Password">
+                        <input type="password" class="login__input" name="passwd" placeholder="Password">
+                        <small class="text-warning"><?php echo $errors['passError']; ?></small>
                     </div>
-                    <!-- <button class="button login__submit" type="submit">
-                        <span class="button__text" >Log In Now</span>
-                        <i class="button__icon fas fa-chevron-right"></i>
-                    </button> -->
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
                 </form>
-                <!-- <div class="social-login">
-                    <h3>log in via</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-login__icon fab fa-instagram"></a>
-                        <a href="#" class="social-login__icon fab fa-facebook"></a>
-                        <a href="#" class="social-login__icon fab fa-twitter"></a>
-                    </div>
-                </div> -->
             </div>
             <div class="screen__background">
-                <span class="screen__background__shape screen__background__shape4"></span>
-                <span class="screen__background__shape screen__background__shape3"></span>
-                <span class="screen__background__shape screen__background__shape2"></span>
-                <span class="screen__background__shape screen__background__shape1"></span>
+                <span class="screen_background_shape screen_background_shape4"></span>
+                <span class="screen_background_shape screen_background_shape3"></span>
+                <span class="screen_background_shape screen_background_shape2"></span>
+                <span class="screen_background_shape screen_background_shape1"></span>
             </div>
         </div>
     </div>
-   
 </body>
 
 </html>
