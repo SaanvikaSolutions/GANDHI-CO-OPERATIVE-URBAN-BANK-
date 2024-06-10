@@ -9,8 +9,12 @@ body {
 
 /* /New code/ */
 .BanIMG {
-  background-image: linear-gradient(to bottom, rgb(194, 195, 195), rgba(179, 179, 179, 0.5)), url('BannerAuction.jpg');
+  /* background-image: linear-gradient(to bottom, rgb(194, 195, 195), rgba(179, 179, 179, 0.5)), url('BannerAuction.jpg'); */
   /* background-size: 250px 250px; */
+  /* background-image: url(kkk.jpg); */
+  background-color: #bbbbbb;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   color: #000000; 
   text-align: center;
@@ -22,7 +26,19 @@ body {
   justify-content: center;
   align-items: center;
   font-family:'Poppins';
+  border-radius: 15px;
+}
 
+.BanIMG h1{
+  font-family: poppins;
+  font-size: 50px;
+  margin-top: -33px;
+  color: black;
+}
+.BanIMG p{
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* //New code */
@@ -120,3 +136,35 @@ body {
   }
 }
  */
+
+
+ 
+@media (max-width: 1200px) {
+  .BanIMG {
+    padding: 80px 150px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .BanIMG {
+    padding: 60px 100px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .BanIMG {
+    padding: 40px 50px;
+    font-size: 16px;
+    background-size: contain; /* Adjust background size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .BanIMG {
+    padding: 20px 30px;
+    font-size: 15px;
+    background-size: contain; /* Adjust background size for smaller screens */
+  }
+}

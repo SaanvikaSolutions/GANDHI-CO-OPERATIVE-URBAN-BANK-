@@ -741,7 +741,7 @@ section:nth-child(even) {
 }
 
 .loan-calculator .top {
-  background: #000000;
+  background: #2a70ad;
   color: #fff;
   padding: 32px;
 }
@@ -805,7 +805,7 @@ section:nth-child(even) {
 }
 
 .loan-calculator .calculate-btn {
-  background: #000000;
+  background: #2a70ad;
   color: #fff;
   border: none;
   padding: 8px 32px;
@@ -846,6 +846,7 @@ section:nth-child(even) {
   padding: 100px 200px;
   height: auto;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -853,4 +854,14 @@ section:nth-child(even) {
   border-radius: 5px;
 }
 
+
+@media  (max-width:909px) {
+  .CALC-BANNER{
+    padding: 30px;
+    font-size: 14px;
+    width: 100%;
+    background-size: cover;
+  }
+  
+}
 /* -----------------------------------               ------------------------------ */
