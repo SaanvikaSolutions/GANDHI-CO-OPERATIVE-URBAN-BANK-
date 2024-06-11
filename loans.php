@@ -52,15 +52,26 @@
             <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
         </div> -->
 
-        <div class="loan-card">
-            <img src="LOANS/loan/housing-loan_2.jpg" alt="Home Loan">
-            <h2>Home Loan</h2>
-            <p>Our hassle-free and streamlined loan process with minimal documentation ensures a smooth and quick home
-                buying experience.</p>
-            <a href="house_loan.html" class="btn-know-more">Know More</a>
-            <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
-        </div>
+        <?php
+            include('admin/connections/dbconnect.php');
 
+            $fetct_query = "SELECT * FROM `loans`";
+            $result = mysqli_query($con,$fetct_query);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                $pgt = $row['id'];
+            echo ' <div class="loan-card">
+                    <img src="admin/includes/images/loan_home/' . $row["loan_photo"] . '" alt="Home Loan">
+                    <h2>' . $row["loan_name"] . '</h2>
+                    <p>' . $row["loan_description"] . '</p>
+                    <a href="house_loan.php?page='.$pgt .'" class="btn-know-more">Know More</a>
+                    <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
+                </div>';
+        }
+        ?>
+        <script>
+            let 
+        </script>
          <!-- <div class="loan-card">
             <img src="LOANS/loan/car-loan_2.jpg" alt="Car Loan">
             <h2>Car Loan</h2>

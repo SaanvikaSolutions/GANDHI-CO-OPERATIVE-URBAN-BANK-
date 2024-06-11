@@ -32,16 +32,33 @@
     <header id="top-nav">
         <specia-header></specia-header>
     </header>
+    <?php
+            include("admin/connections/dbconnect.php");
+            $new = $_GET['page'];
+            
+            $fetct_query = "SELECT * FROM `loans` WHERE id='$new'";
+            $result = mysqli_query($con,$fetct_query);
+            $row = mysqli_fetch_assoc($result);
+            
+        ?>
     <div class="Section_top">
         <div class="slider-content">
-            <!-- <h1>Sagar <span>Developer</span></h1>
-            <a href="#">Welcome</a> -->
+        <?php
+           echo' <script>
+                var sectionTopElement = document.querySelector(".Section_top");
+                sectionTopElement.style.backgroundImage = "url(./includes/images/loan_home/'.$row['loanpage_banner'].')";
+            </script>'
+            ?>
         </div>
     </div>
     <div class="personal-container">
+        
+     
+        <?php foreach($result as $row => $header){?>
         <div class="content-container">
-            <h2><strong>House</strong> Loan</h2>
-            <p> Borrow up to <strong>Rs. 60,00,000/-    @ 12% (1.00 paisa monthly) </strong>  against your gold assets, with loan amounts based on appraised values.  Repay 
+            <h2><strong> <?=$header['loan_name']?></strong></h2>
+            <p>  <?=$header['about_loan']?>
+                 <!-- Borrow up to <strong>Rs. 60,00,000/-    @ 12% (1.00 paisa monthly) </strong>  against your gold assets, with loan amounts based on appraised values.  Repay 
                 conveniently over a minimum of 1 year
                 and up to 3 years on a monthly interest basis. Plus, with flexible repayment options, you can choose to
                 repay monthly or within the specified period. Rest assured, your gold is safe with us, and in case of
@@ -49,7 +66,7 @@
                 flexibility, and trust with Gold Loans from Gandhi Cooperative Urban Bank Ltd <br> <br>
                 Take the
                 first step towards availing instant funds by applying for a House Loan offered by Gandhi Cooperative
-                Bank today!
+                Bank today! -->
             </p>
         </div>
 
@@ -122,9 +139,9 @@
         <div class="eligibility-documents-container">
 
             <div class="eligibility" id="eligibility">
-                <div class="ribbon">Eligibility for House Loan</div>
-                <ul>
-                    <li>Employment: Salaried individuals, self-employed professionals, and business owners are eligible.
+                <div class="ribbon">Eligibility for  <?=$header['loan_name']?></div>
+                <ul> <?=$header['loan_eligibility']?>
+                    <!-- <li>Employment: Salaried individuals, self-employed professionals, and business owners are eligible.
                     </li>
                     <ul>
                         <li>Salaried doctors</li>
@@ -139,14 +156,14 @@
                     <li>Documentation: Applicants need to provide proof of identity, address, income, and other relevant
                         documents as per bank requirements.</li>
                     <li>Loan Purpose: The loan should be utilized for the intended purpose, such as purchasing a house,
-                        construction, renovation, or extension.</li>
+                        construction, renovation, or extension.</li> -->
                 </ul>
 
             </div>
             <div class="documents" id="documents">
                 <div class="ribbon">Documents for Personal Loan</div>
-                <ul>
-                    <li>Original Title deeds relating to the House properties.</li>
+                <ul><?=$header['loan_documents']?>
+                    <!-- <li>Original Title deeds relating to the House properties.</li>
                     <li>Link documents.</li>
                     <li>Latest Encumbrance Certificate for 13 years.</li>
                     <li> Latest House Tax receipt.</li>
@@ -159,7 +176,7 @@
                         <li>PassportPAN Card</li>
                         <li>Driving license</li>
                         <li>Aadhaar Card with date of birth</li>
-                        <li>Voters Id</li>
+                        <li>Voters Id</li> -->
                     </ul>
                 </ul>
             </div>
@@ -170,16 +187,17 @@
 
     <div class="apply" id="how-to-apply">
         <h2>How to apply for a House Loan ?</h2>
-        <ul>
-            <li> House Loan  @ 12% (1.00 paisa monthly).</li>
+        <ul><?=$header['apply_loan']?>
+            <!-- <li> House Loan  @ 12% (1.00 paisa monthly).</li>
             <li>Visit the House Loan section .</li>
             <li>Provide your House details such as mobile number and either Date of Birth or PANCARD.</li>
-            <!-- <li>Key in the OTP that you receive on your mobile number</li> -->
+            <li>Key in the OTP that you receive on your mobile number</li>
             <li>Give the consent for sharing your details for the purpose of verification of your documents.</li>
             <li>Keep your last six months bank statements and salary slips ready. </li>
-            <li>Complete the  KYC process for your loan application to be complete.</li>
+            <li>Complete the  KYC process for your loan application to be complete.</li> -->
         </ul>
     </div>
+    <?php } ?>
     <special-footer></special-footer>
     <script src="./HeaderFooter.js"></script>
     <script src="hrader.js"></script>

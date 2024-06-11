@@ -9,7 +9,7 @@
   <title>Side Navigation Bar</title>
   <link rel="stylesheet" href="css/sidebar.css" />
   <link rel="stylesheet" href="css/table.css">
-
+  <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
