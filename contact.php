@@ -45,6 +45,18 @@
                   </p>
                   <input class="input" id="imgis-3" name="PhoneNumber" placeholder="Please enter phone number...">
                 </div>
+                
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3" id = "dropdowm-container">
+                  <p class="text-blk input-title">
+                    What is your Query ?
+                  </p>
+                  <!-- <textarea class="textinput" id="i5vyy-3" placeholder="Please enter query..."></textarea> -->
+                   <select class="textinput" id = "query-type" name="query-type">
+                    <option value="Query1">Account Related</option>
+                    <option value="Query2">Transaction Inquiries</option>
+                    <option value="Query2">Security and Fraud Concerns</option>
+                   </select>
+                </div>
                 <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3">
                   <p class="text-blk input-title">
                     WHAT DO YOU HAVE IN MIND ?
