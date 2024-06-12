@@ -48,7 +48,7 @@
                 
                 <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3" id = "dropdowm-container">
                   <p class="text-blk input-title">
-                    What is your Query ?
+                    What is your Query ? 
                   </p>
                   <!-- <textarea class="textinput" id="i5vyy-3" placeholder="Please enter query..."></textarea> -->
                    <select class="textinput" id = "query-type" name="query-type">

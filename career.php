@@ -174,13 +174,29 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="location">Preferred Location</label>
-                    <input type="text" id="location" name="location" required>
+                <label for="location">Preferred Location</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Location</option>
+                        <option value="HEAD OFFICE">Head Office</option>
+                        <option value="PATAMATA BRANCH">Patamata Branch</option>
+                        <option value="VUYYURU BRANCH">Vuyyuru Branch</option>
+                        <option value="AZITSINGHNAGAR BRANCH">Azitsinghnagar Branch</option>
+                        <option value="BHAVANIPURAM BRANCH">Bhavanipuram Branch</option>
+                        <option value="HANUMAN JUNCTION BRANCH">Hanuman Junction Branch</option>
+                        <option value="MYLAVARAM BRANCH">Mylavaram Branch</option>
+                        <option value="NUZIVIDU BRANCH">Nuzividu Branch</option>
+                        <option value="RAMAVARAPPADU BRANCH">Ramavarappadu Branch</option>
+                        <option value="SATYA NARAYANAPURAM BRANCH">Satya Narayanapuram Branch</option>
+                        <option value="GUNTUR BRANCH">Guntur Branch</option>
+                    </select>
+
+                    <!-- <label for="location">Preferred Location</label>
+                    <input type="text" id="location" name="location" required> -->
                 </div>
                 <button type="button" onclick="nextStage(1)">Next</button>
             <!-- </form> -->
         </div>
-        <div id="stage2" class="stage">
+        <div id="stage2" class="stage"> 
             <h3>Could you tell us about yourself?</h3>
             <!-- <form id="stage2-form"  method="post" > -->
                 <div class="form-group">

@@ -91,7 +91,7 @@
                         At GANDHI CO-OPERATIVE BANK , we believe your journey should continue without any speed bumps.
                         This is why we
                         bring you customized Bank Loans at competitive interest rates. To get started, check your loan
-                        eligibility using our simple loan calculators. You can submit your Bank Loan application online
+                        eligibility using our simple loan calculators. You can submit your Bank Loan application 
                         in three easy steps and avail the most attractive interest rates and comfortable repayment
                         tenures.
                     </p>

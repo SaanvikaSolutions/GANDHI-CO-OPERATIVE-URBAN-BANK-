@@ -121,6 +121,7 @@
     padding-bottom: 60px;
     padding-top: 10px;
     list-style: none;
+    background-color: black;
 }
 
 .footer-others ul li a:hover {
