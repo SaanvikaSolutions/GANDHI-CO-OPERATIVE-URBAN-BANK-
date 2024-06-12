@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $loan_image = $_FILES['loan-image']['name'];
     $temp_file1 = $_FILES['loan-image']['tmp_name'];
     $loanpage_banner = $_FILES['loanpage_banner']['name'];
-    $temp_file1 = $_FILES['loanpage_banner']['tmp_name'];
+    $temp_file2 = $_FILES['loanpage_banner']['tmp_name'];
 
     //move uploaded file
     move_uploaded_file($temp_file1,"./includes/images/loan_home/$loan_image");

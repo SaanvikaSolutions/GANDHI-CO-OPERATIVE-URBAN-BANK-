@@ -45,11 +45,11 @@ this.innerHTML = `
         </div>
       </li>
       <li>
-        <a href="./loans.html">Loans</a>
+        <a href="./loans.php">Loans</a>
         <div class="services-drop-down">
-          <a href="./gold_loan.html">gold loan</a>
+          <a href="./gold_loan.php">gold loan</a>
           <!-- // <a href="./personal-loan.html">personal loan</a> -->
-          <a href="./house_loan.html">home loan</a>
+          <a href="./house_loan.php">home loan</a>
           <a href="./education.html">education loan</a>
           <!-- // <a href="./vegnflower-loan.html">vegetable & flower culture</a> -->
           <!-- // <a href="./two-weeler-loan.html">two-wheeler loan</a> -->

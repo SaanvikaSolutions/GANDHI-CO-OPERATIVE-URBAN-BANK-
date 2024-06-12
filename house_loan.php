@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+if(!isset($_GET['page'])){
+    echo "<script>window.location.href = 'loans.php';</script>";
+}
+?>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,20 +42,18 @@
     <?php
             include("admin/connections/dbconnect.php");
             $new = $_GET['page'];
+
             
             $fetct_query = "SELECT * FROM `loans` WHERE id='$new'";
             $result = mysqli_query($con,$fetct_query);
             $row = mysqli_fetch_assoc($result);
             
         ?>
-    <div class="Section_top">
-        <div class="slider-content">
         <?php
-           echo' <script>
-                var sectionTopElement = document.querySelector(".Section_top");
-                sectionTopElement.style.backgroundImage = "url(./includes/images/loan_home/'.$row['loanpage_banner'].')";
-            </script>'
-            ?>
+    echo '<div class="Section_top" style="background-image: url(\'./admin/includes/images/loan_home/' . $row['loanpage_banner'] . '\');">
+            <div class="slider-content">';
+?>
+
         </div>
     </div>
     <div class="personal-container">

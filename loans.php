@@ -53,25 +53,24 @@
         </div> -->
 
         <?php
-            include('admin/connections/dbconnect.php');
+include('admin/connections/dbconnect.php');
 
-            $fetct_query = "SELECT * FROM `loans`";
-            $result = mysqli_query($con,$fetct_query);
+$fetct_query = "SELECT * FROM `loans`";
+$result = mysqli_query($con, $fetct_query);
 
-            while ($row = mysqli_fetch_assoc($result)) {
-                $pgt = $row['id'];
-            echo ' <div class="loan-card">
-                    <img src="admin/includes/images/loan_home/' . $row["loan_photo"] . '" alt="Home Loan">
-                    <h2>' . $row["loan_name"] . '</h2>
-                    <p>' . $row["loan_description"] . '</p>
-                    <a href="house_loan.php?page='.$pgt .'" class="btn-know-more">Know More</a>
-                    <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
-                </div>';
-        }
-        ?>
-        <script>
-            let 
-        </script>
+while ($row = mysqli_fetch_assoc($result)) {
+    $pgt = $row['id'];
+    echo '<div class="loan-card">
+            <img src="admin/includes/images/loan_home/' . htmlspecialchars($row["loan_photo"], ENT_QUOTES, 'UTF-8') . '" alt="Home Loan">
+            <h2>' . htmlspecialchars($row["loan_name"], ENT_QUOTES, 'UTF-8') . '</h2>
+            <p>' . htmlspecialchars($row["loan_description"], ENT_QUOTES, 'UTF-8') . '</p>
+            <a href="house_loan.php?page=' . urlencode($pgt) . '" class="btn-know-more">Know More</a>
+            <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
+        </div>';
+}
+?>
+
+      
          <!-- <div class="loan-card">
             <img src="LOANS/loan/car-loan_2.jpg" alt="Car Loan">
             <h2>Car Loan</h2>
@@ -80,7 +79,7 @@
             <a href="car-loan.html" class="btn-know-more">Know More</a>
             <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
         </div> -->
-        <div class="loan-card">
+        <!-- <div class="loan-card">
             <img src="LOANS/loan/EducationLoan.jpg" alt="Car Loan">
             <h2>Education Loan</h2>
             <p>With competitive interest rates and flexible repayment options, our loans make it easy to pursue higher
@@ -96,7 +95,7 @@
                 needs.</p>
             <a href="gold_loan.html" class="btn-know-more">Know More</a>
             <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
-        </div>
+        </div> -->
         <!-- <div class="loan-card">
             <img src="LOANS/loan/rural-vehicle-finance.jpg" alt="Car Loan">
             <h2>
@@ -114,7 +113,7 @@
             <a href="two-weeler-loan.html" class="btn-know-more">Know More</a>
             <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
         </div> -->
-        <div class="loan-card">
+        <!-- <div class="loan-card">
             <img src="LOANS/loan/easygain-overdraft_1.jpg" alt="Car Loan">
             <h2>Against Deposits Loan</h2>
             <p>Earn interest on your deposit while you enjoy overdraft with EasyGain Overdraft.</p>
@@ -128,7 +127,7 @@
                 and flexible terms tailored to your specific financial needs.</p>
             <a href="business-loan.html" class="btn-know-more">Know More</a>
             <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
-        </div>
+        </div> -->
     </div>
     <special-footer></special-footer>
     <script src="./HeaderFooter.js"></script>
