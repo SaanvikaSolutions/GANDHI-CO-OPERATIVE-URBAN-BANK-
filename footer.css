@@ -6,7 +6,7 @@
     /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .footer {
@@ -107,9 +107,9 @@
     color: #fff;
 }
 
-.footer-others ul li a{
+.footer-others ul li a {
     text-decoration: none;
-    color: #bfbfbf; 
+    color: #bfbfbf;
 }
 
 .footer-others ul {
@@ -121,11 +121,14 @@
     padding-bottom: 60px;
     padding-top: 10px;
     list-style: none;
-    background-color: black;
+    /* width: fit-content; */
+    background-color: #10182F;
+    /* align-items: center; */
+
 }
 
 .footer-others ul li a:hover {
-    color: #fff;
+    color: #000000;
 }
 
 @media (max-width: 768px) {

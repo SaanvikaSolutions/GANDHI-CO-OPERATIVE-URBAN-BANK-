@@ -10,8 +10,8 @@ this.innerHTML = `
   </div>
   <div class="header-first-div">
     <!-- here we have  write the heading -->
-    <div >
-     <a href="home.php"  class="header-img-logo"> <img src="./headerimages/gandhilogo.png" alt="gandhi pic" /> </a>
+    <div>
+      <a href="home.php" class="header-img-logo"> <img src="./headerimages/gandhilogo.png" alt="gandhi pic" /> </a>
     </div>
 
     <div class="header-heading">
@@ -174,12 +174,16 @@ this.innerHTML = `
     </div>
     <div class="footer-others">
       <ul>
-        <li style="color: white;"> Others</li>
-        <li><a href="./Important_documents.html"> Important Documents</a></li>
+        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"> Others</li>
+        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a
+            href="./Important_documents.html"> Important Documents</a></li>
         <!-- <li><a href="">Account Aggregator</a></li> -->
-        <li><a href="./TandC.html">Terms & Conditions</a></li>
-        <li><a href="./Banking Ombudsman.html">Banking Ombudsman</a></li>
-        <li><a href="./BCSBI Members.html">BCSBI</a></li>
+        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a href="./TandC.html">Terms &
+            Conditions</a></li>
+        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a
+            href="./Banking Ombudsman.html">Banking Ombudsman</a></li>
+        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a
+            href="./BCSBI Members.html">BCSBI</a></li>
       </ul>
     </div>
   </section>
