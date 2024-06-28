@@ -13,7 +13,7 @@ body {
     color: #090808;
     text-align: center;
     padding: 150px 20px;
-    height: auto;
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;

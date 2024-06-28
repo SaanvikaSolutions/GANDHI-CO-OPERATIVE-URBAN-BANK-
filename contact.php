@@ -82,6 +82,21 @@
                 Phone - 0866-2433379, 0866-2436365 <br>
                 Email - gandhiheadoffice@gandhicub.com
               </p>
+              <!-- ------  Grivence officer start------- -->
+
+              <div class = "Contact-Box"> 
+                <h3 class = "header"> Grievance officer : CEO </h3>
+                <p class = "contact info"><strong>Email : </strong>secretary@gandhicub.com </P>
+                <br>
+                <!-- <i class="fa-solid fa-phone-volume"></i> -->
+                <p class = "contact info"><strong> Mobile: </strong> 9848526764</p>
+
+              </div>
+
+           
+
+              <!-- ------  Grivence officer start------- -->
+
               <div class="social-media-links mob">
                 <a class="social-icon-link" href="#" id="ix94i-2-2">
                   <img class="link-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">

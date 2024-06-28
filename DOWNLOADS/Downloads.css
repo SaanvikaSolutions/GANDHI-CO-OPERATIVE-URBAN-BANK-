@@ -39,7 +39,7 @@ body{
   padding: 16px;
   border-radius: 8px;
   display: flex;
-  gap: 16px;
+  gap: 16px; 
   align-items: center;
   will-change: transform;
   background-color: #ffffff;

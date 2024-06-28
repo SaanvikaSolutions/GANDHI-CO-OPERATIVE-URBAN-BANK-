@@ -291,11 +291,11 @@
   }
   
   .contact_us_6 .social-media-links.mob {
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    width: 230px;
+    margin-bottom: 10px;
+    margin-left: 144px;
+    width: 248px;
     display: flex;
     justify-content: flex-start;
   }
@@ -770,3 +770,34 @@ body {
     width: 100%;
   }
 }
+
+/* ------------------------------   Grivence officer css --------------------------------------------------- */
+
+
+.Contact-Box{
+  background-color: #5590cb5c;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 50px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  text-align: center;
+}
+.Contact-Box:hover{
+  transform: scale(1.025);
+  /* box-shadow: 0 8px 16px rgba(red, green, blue, 0.2); */
+}
+
+.header{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact info{
+  font-size: 1em;
+  margin: 5px 0;
+  color: #555;
+}
+

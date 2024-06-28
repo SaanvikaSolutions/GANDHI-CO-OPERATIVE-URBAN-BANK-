@@ -141,7 +141,7 @@ this.innerHTML = `
           <li><a href="./SDL.html">Safe Deposit</a></li>
           <li><a href="./current-account.html">Current Account</a></li>
         </ul>
-      </div>
+      </div> 
 
       <div class="footer-col">
         <a href="./loans.html">

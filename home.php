@@ -66,7 +66,7 @@
                         <span class="yellow">G</span>ANDHI CO-OPERATIVE BANK
                     </h2>
                     <p>
-                        95 years in service, with the spirit of the Cooperation, the Bank is growing day by day from its
+                        96 years in service, with the spirit of the Cooperation, the Bank is growing day by day from its
                         formation, gaining trust of the Depositors by providing Safety and Security to their funds
                         deposited in the Bank and lending to lower and middle class people to provide financial
                         assistance for their development.
