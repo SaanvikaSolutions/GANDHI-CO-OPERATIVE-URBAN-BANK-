@@ -84,7 +84,9 @@
               </p>
               <!-- ------  Grivence officer start------- -->
 
-              <div class = "Contact-Box"> 
+             <div class = "officials">
+
+             <div class = "Contact-Box"> 
                 <h3 class = "header"> Grievance officer : CEO </h3>
                 <p class = "contact info"><strong>Email : </strong>secretary@gandhicub.com </P>
                 <br>
@@ -92,6 +94,15 @@
                 <p class = "contact info"><strong> Mobile: </strong> 9848526764</p>
 
               </div>
+              <div class = "Contact-Box"> 
+                <h3 class = "header"> Principal Nodal Officer : M.B.Padmini</h3>
+                <p class = "contact info"><strong>Email : </strong> ceo@gandhicub.com</P>
+                <br>
+                <!-- <i class="fa-solid fa-phone-volume"></i> -->
+                <p class = "contact info"><strong> Mobile: </strong> 7981156549</p>
+
+              </div>
+</div>
 
            
 
@@ -112,7 +123,7 @@
                 </a>
               </div>
               <div class="map-box container-block">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61205.33443671356!2d80.61543839166342!3d16.50925756417201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f001c08fb825%3A0x9afe950bf6a46560!2sThe%20Gandhi%20Co-Operative%20Urban%20Bank%20Limited!5e0!3m2!1sen!2sin!4v1714199146361!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61205.33443671356!2d80.61543839166342!3d16.50925756417201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f001c08fb825%3A0x9afe950bf6a46560!2sThe%20Gandhi%20Co-Operative%20Urban%20Bank%20Limited!5e0!3m2!1sen!2sin!4v1714199146361!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>

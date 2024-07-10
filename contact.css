@@ -294,7 +294,7 @@
     margin-top: 5px;
     margin-right: 0px;
     margin-bottom: 10px;
-    margin-left: 144px;
+    margin-left: 266px;
     width: 248px;
     display: flex;
     justify-content: flex-start;
@@ -778,9 +778,12 @@ body {
   background-color: #5590cb5c;
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin-left: 50px;
+  width: 50%;
+
+  /* margin-left: 50px; */
+  margin: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
   max-width: 400px;
   text-align: center;
 }
@@ -801,3 +804,8 @@ body {
   color: #555;
 }
 
+.officials{
+  display: flex;
+  /* margin: 10px; */
+
+}
