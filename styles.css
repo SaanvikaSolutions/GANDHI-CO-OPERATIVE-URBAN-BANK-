@@ -78,7 +78,7 @@ body {
 } */
 
 section:nth-child(odd) {
-  background-color: var(--color-black-light);
+  background-color: #10182f;
 }
 
 section:nth-child(even) {

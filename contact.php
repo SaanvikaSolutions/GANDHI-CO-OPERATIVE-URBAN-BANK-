@@ -75,12 +75,9 @@
                 Reach us at
               </p>
               <p class="text-blk map-contactus-subhead">
-                Address - Door No.29-36-21,
-                Museum Road,
-                Governorpet,
-                Vijayawada-520002. <br> <br>
-                Phone - 0866-2433379, 0866-2436365 <br>
-                Email - gandhiheadoffice@gandhicub.com
+                <strong>Address</strong> - Door No.29-36-21, Museum Road, Governorpet, Vijayawada-520002. 
+                <strong>Phone -</strong> 0866-2433379, 0866-2436365
+                <strong>Email -</strong> gandhiheadoffice@gandhicub.com
               </p>
               <!-- ------  Grivence officer start------- -->
 

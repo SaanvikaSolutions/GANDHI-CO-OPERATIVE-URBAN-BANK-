@@ -134,13 +134,26 @@
                   <span class="navlink">Contact Page</span>
                   <!-- <i class="bx bx-chevron-right arrow-left"></i> -->
                 </div>
+              </li></a>
+              <a href="./view_loan_applications.php"><li class="item">
+                <div  class="nav_link submenu_item">
+                  <span class="navlink_icon">
+                    <i class="bx bx-cloud-upload"></i>
+                  </span>
+                  <span class="navlink">Loan Applications</span>
+                  <!-- <i class="bx bx-chevron-right arrow-left"></i> -->
+                </div>
 
-                <!-- <ul class="menu_items submenu">
-                  <a href="#" class="nav_link sublink">Services home page</a>
-                  <a href="#" class="nav_link sublink">Nav Sub Link</a>
-                  <a href="#" class="nav_link sublink">Nav Sub Link</a>
-                  <a href="#" class="nav_link sublink">Nav Sub Link</a>
-                </ul> -->
+              </li></a>
+              <a href="./view_service_applications.php"><li class="item">
+                <div  class="nav_link submenu_item">
+                  <span class="navlink_icon">
+                    <i class="bx bx-cloud-upload"></i>
+                  </span>
+                  <span class="navlink">Service Applications</span>
+                  <!-- <i class="bx bx-chevron-right arrow-left"></i> -->
+                </div>
+
               </li></a>
               <!-- end -->
             </ul>
@@ -184,7 +197,7 @@
             </ul>
 
             <!-- Sidebar Open / Close -->
-            <div class="bottom_content">
+            <!-- <div class="bottom_content">
               <div class="bottom expand_sidebar">
                 <span> Expand</span>
                 <i class='bx bx-log-in'></i>
@@ -193,7 +206,7 @@
                 <span> Collapse</span>
                 <i class='bx bx-log-out'></i>
               </div>
-            </div>
+            </div> -->
           </div>
         </nav>
       </div>
