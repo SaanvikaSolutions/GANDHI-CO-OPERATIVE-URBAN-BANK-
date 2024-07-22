@@ -47,14 +47,16 @@ this.innerHTML = `
       <li>
         <a href="./loans.php">Loans</a>
         <div class="services-drop-down">
-          <a href="./gold_loan.php">gold loan</a>
+          <!-- <a href="./gold_loan.php">gold loan</a> -->
           <!-- // <a href="./personal-loan.html">personal loan</a> -->
-          <a href="./house_loan.php">home loan</a>
-          <a href="./education.html">education loan</a>
+          <!-- <a href="./house_loan.php">home loan</a>
+          <a href="./education.html">education loan</a> -->
           <!-- // <a href="./vegnflower-loan.html">vegetable & flower culture</a> -->
           <!-- // <a href="./two-weeler-loan.html">two-wheeler loan</a> -->
-          <a href="./Against-Deposits-Loans.html">Against Deposits loan</a>
-          <a href="./business-loan.html">Business loan</a>
+
+
+          <!-- <a href="./Against-Deposits-Loans.html">Against Deposits loan</a>
+          <a href="./business-loan.html">Business loan</a> -->
           <a href="./LoanCalculator.html">Loan Calculator</a>
         </div>
       </li>
@@ -148,8 +150,8 @@ this.innerHTML = `
           <h4>Loans</h4>
         </a>
         <ul class="links">
-          <li><a href="./gold_loan.html">Gold Loan</a></li>
-          <li><a href="./house_loan.html">House Loan</a></li>
+          <li><a href="gold_loan.php">Gold Loan</a></li>
+          <li><a href="house_loan.php">House Loan</a></li>
           <!-- //   <li><a href="./personal-loan.html">Personal Loan</a></li> -->
           <li><a href="./education.html">Education Loan</a></li>
           <!-- //   <li><a href="./two-weeler-loan.html">Two-Wheeler Loan</a></li> -->
@@ -174,15 +176,15 @@ this.innerHTML = `
     </div>
     <div class="footer-others">
       <ul>
-        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"> Others</li>
-        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a
+        <li style="background-color: rgb(255, 255, 255) ; border-radius: 10px; padding: 5px 12px;"> Others</li>
+        <li style="background-color: rgb(255, 255, 255) ; border-radius: 10px; padding: 5px 12px;"><a
             href="./Important_documents.html"> Important Documents</a></li>
         <!-- <li><a href="">Account Aggregator</a></li> -->
-        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a href="./TandC.html">Terms &
+        <li style="background-color: rgb(255, 255, 255) ; border-radius: 10px; padding: 5px 12px;"><a href="./TandC.html">Terms &
             Conditions</a></li>
-        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a
+        <li style="background-color: rgb(255, 255, 255) ; border-radius: 10px; padding: 5px 12px;"><a
             href="./Banking Ombudsman.html">Banking Ombudsman</a></li>
-        <li style="background-color: orangered ; border-radius: 10px; padding: 5px 12px;"><a
+        <li style="background-color: rgb(255, 255, 255) ; border-radius: 10px; padding: 5px 12px;"><a
             href="./BCSBI Members.html">BCSBI</a></li>
       </ul>
     </div>

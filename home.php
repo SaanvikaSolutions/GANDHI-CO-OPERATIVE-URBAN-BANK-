@@ -108,7 +108,7 @@
                                     Unlock your dream home: Access flexible financing options, personalized support.
                                 </p>
 
-                                <a href="house_loan.html" class="link-button">Read More →</a>
+                                <a href="house_loan.php" class="link-button">Read More →</a>
                             </div>
                         </div>
 
@@ -124,7 +124,7 @@
                                     Empower your financial journey: Secure funds with your gold assets
                                 </p>
 
-                                <a href="gold_loan.html" class="link-button">Read More →</a>
+                                <a href="gold_loan.php" class="link-button">Read More →</a>
                             </div>
                         </div>
                         <div class="class-card__title">Gold Loan </div>

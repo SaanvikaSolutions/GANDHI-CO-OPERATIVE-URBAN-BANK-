@@ -65,7 +65,7 @@ while ($row = mysqli_fetch_assoc($result)) {
             <h2>' . htmlspecialchars($row["loan_name"], ENT_QUOTES, 'UTF-8') . '</h2>
             <p>' . htmlspecialchars($row["loan_description"], ENT_QUOTES, 'UTF-8') . '</p>
             <a href="house_loan.php?page=' . urlencode($pgt) . '" class="btn-know-more">Know More</a>
-            <a href="loan-applynow.html" class="btn-apply-now">Apply Now</a>
+            <a href="apply.php" class="btn-apply-now">Apply Now</a>
         </div>';
 }
 ?>
